@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>楊坊于 Ted Yang｜PMO・專案管理・營運治理</title>
-<meta name="description" content="楊坊于 Ted Yang 的 PMO、專案管理與營運治理作品集：約 10 年工作經驗、Scrum 交付週期縮短 30–50%、主要服務營收年增 51%，以及 GoLand／NexNav 兩個 AI 協作 MVP。">
+<title>楊坊于 Ted Yang｜專案管理・PMO・營運策略規劃</title>
+<meta name="description" content="楊坊于 Ted Yang 的 PMO、專案管理與營運策略規劃作品集：約 10 年工作經驗、季度與年度營運規劃、Scrum 交付週期縮短 30–50%、主要服務營收年增 51%，以及 GoLand／NexNav 兩個 AI 協作 MVP。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@ p {margin-bottom:0}
 .brand .slash {color:var(--accent);padding:0 2px}
 .brand{display:flex;flex-direction:column;line-height:1.2}.brand-sub{font:600 10.5px 'Noto Sans TC',sans-serif;letter-spacing:.14em;color:var(--muted,#6b7a86);margin-top:3px}
 .hero h1{font-family:'Space Grotesk','Noto Sans TC',sans-serif}.hero h1 .sep{font-weight:400;opacity:.55;margin:0 .12em}
-.hero-actions .btn{justify-content:center}.contact-actions .btn svg{flex:none;width:22px;height:22px}.nav-li{display:inline-flex;align-items:center;color:var(--ink);padding:7px;margin:-7px;border-radius:6px}.nav-li:hover{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);text-decoration:none}
+.hero-actions .btn{justify-content:center}.contact-actions .btn svg{flex:none;width:22px;height:22px}.nav-li{display:inline-flex;align-items:center;color:var(--ink)}.nav-li:hover{color:var(--accent)}
 button.btn{font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;width:100%}
 .desktop-links {display:flex;align-items:center;gap:20px;white-space:nowrap;font-size:13px;font-weight:600}
 .desktop-links a {position:relative; transition:color .2s}
@@ -172,6 +172,14 @@ button.btn{font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;w
 .gallery-item figcaption b {color:var(--ink);font-size:14.5px}
 .gallery-item .browser {transition:transform .22s,box-shadow .22s}
 .gallery-item:hover .browser {transform:translateY(-3px);box-shadow:var(--shadow)}
+.research {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;margin-top:16px}
+.research-item {margin:0}
+.research-item.wide {grid-column:1/-1}
+.research-item img {display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;transition:box-shadow .2s}
+.research-item a:hover img {box-shadow:var(--shadow)}
+.research-item figcaption {font-size:12.8px;line-height:1.7;color:var(--muted);margin-top:8px}
+.research-item figcaption b {display:block;color:var(--ink);font-size:13.5px}
+@media(max-width:690px){.research {grid-template-columns:1fr}}
 .roles {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px}
 .role {border-left:3px solid var(--accent);padding-left:14px}
 .role b {font-size:14px;color:var(--ink)}
@@ -338,7 +346,7 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <body>
 <div class="scroll-progress" aria-hidden="true"></div>
 <nav class="site-nav" aria-label="主要導覽"><div class="wrap nav-inner">
-<a class="brand" href="#top"><span class="brand-name">TED<span class="slash"> / </span>YANG</span><span class="brand-sub">PMO・專案治理・營運管理</span></a>
+<a class="brand" href="#top"><span class="brand-name">TED<span class="slash"> / </span>YANG</span><span class="brand-sub">PMO・營運策略規劃</span></a>
 <div class="desktop-links"><a href="#about">專業定位</a><a href="#impact">關鍵成果</a><a href="#experience">工作經歷</a><a href="#projects">專案作品</a><a href="#skills">專長</a><a class="nav-li" href="https://www.linkedin.com/in/tedyang0612" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 個人檔案" title="LinkedIn"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="#contact" class="nav-contact">聯絡我</a></div>
 <details class="mobile-nav"><summary aria-label="展開網站選單">☰ <span>選單</span></summary><div class="mobile-links">
 <a href="#about">專業定位</a><a href="#impact">關鍵成果</a><a href="#experience">工作經歷</a><a href="#projects">專案作品</a><a href="#skills">專長與工具</a><a href="https://www.linkedin.com/in/tedyang0612" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="#contact">聯絡我</a>
@@ -346,10 +354,10 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 </div></nav>
 <header id="top" class="hero"><div class="wrap hero-grid">
 <div>
-<div class="eyebrow">PMO · PROJECT GOVERNANCE · OPERATIONS</div>
+<div class="eyebrow">PMO · STRATEGY &amp; OPERATIONS</div>
 <h1>Ted Yang<span class="sep">｜</span>楊坊于</h1>
 <p class="hero-headline">以治理思維整合目標、流程與團隊，<br>讓專案真正落地。</p>
-<div class="hero-about"><p>約 10 年工作經驗，其中約 3 年帶領 4–8 人團隊；歷任營運經理、事業群特助與 Scrum Master。</p>
+<div class="hero-about"><p>約 10 年工作經驗，其中約 3 年帶領 4–8 人團隊；歷任營運經理、事業群特助與 Scrum Master，曾負責事業群季度與年度營運規劃。</p>
 <p>近年運用 AI 輔助開發完成個人產品 MVP，並於六人跨職能團隊擔任平台開發與技術實現主責。</p></div>
 <div class="hero-actions"><a class="btn btn-primary" href="#impact">查看代表成果</a><a class="btn btn-outline" href="#projects">探索專案作品</a><a class="btn btn-outline" href="#contact">與我聯絡</a></div>
 </div>
@@ -359,9 +367,9 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <section id="about"><div class="wrap">
 <div class="section-heading reveal"><div><div class="eyebrow">01 / POSITIONING</div><h2>核心能力｜職涯定位</h2></div><p class="section-aside">從營運策略、流程改善到數位實作，建立目標與執行之間的連結。</p></div>
 <div class="capability-grid">
-<article class="capability reveal"><div class="index">01 · GOVERNANCE</div><h3>營運目標與績效治理</h3><p>制定營運策略、配置資源並追蹤績效，將管理目標落實至具體行動。</p><a class="evidence-link" href="#job-jek">看營運成果 <span aria-hidden="true">→</span></a></article>
+<article class="capability reveal"><div class="index">01 · GOVERNANCE</div><h3>營運規劃與績效治理</h3><p>擬定季度與年度營運計畫、配置資源並追蹤績效，將策略目標落實為各職能的具體行動。</p><a class="evidence-link" href="#job-weiming">看營運規劃 <span aria-hidden="true">→</span></a></article>
 <article class="capability reveal"><div class="index">02 · DELIVERY</div><h3>敏捷協作與流程改善</h3><p>導入 Scrum 與透明的需求交接機制，縮短交付週期並提升會議效率。</p><a class="evidence-link" href="#job-weiming">看 Scrum 實績 <span aria-hidden="true">→</span></a></article>
-<article class="capability reveal"><div class="index">03 · DIGITAL</div><h3>技術需求轉譯與 AI 實作</h3><p>把需求拆解成系統規格、開發任務與驗收標準，整合工具交付 MVP。</p><a class="evidence-link" href="#projects">看產品專題 <span aria-hidden="true">→</span></a></article>
+<article class="capability reveal"><div class="index">03 · DIGITAL</div><h3>數據分析與 AI 實作</h3><p>以數據與競品研究支撐決策，再把需求拆解為規格、任務與驗收標準，整合工具交付 MVP。</p><a class="evidence-link" href="#nexnav">看產品專題 <span aria-hidden="true">→</span></a></article>
 </div></div></section>
 <section id="impact" class="soft"><div class="wrap">
 <div class="section-heading reveal"><div><div class="eyebrow">02 / SELECTED IMPACT</div><h2>關鍵成果</h2></div><p class="section-aside">保留最能代表營運成長、流程改善與團隊管理的四項指標。</p></div>
@@ -372,24 +380,26 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <a class="impact-item reveal" href="#job-jek"><span class="value">約 3 年</span><span class="unit-title">團隊管理經驗</span><span class="metric-meta">帶領 4–8 人團隊</span><span class="metric-link">查看相關經歷 <span aria-hidden="true">→</span></span></a>
 </div></div></section>
 <section id="experience"><div class="wrap">
-<div class="section-heading reveal"><div><div class="eyebrow">03 / SELECTED EXPERIENCE</div><h2>從營運管理走向團隊治理</h2></div><p class="section-aside">呈現與營運管理、PMO 及跨職能專案推進最相關的職務成果。</p></div>
+<div class="section-heading reveal"><div><div class="eyebrow">03 / SELECTED EXPERIENCE</div><h2>從營運管理走向營運規劃與治理</h2></div><p class="section-aside">呈現與營運策略規劃、PMO 及跨職能專案推進最相關的職務成果。</p></div>
 <div class="job-stack">
 <article id="job-weiming" class="job-card reveal"><div class="job-top"><div><h3 class="job-name">偉盟系統</h3><div class="job-role">事業群特助／管理師 · Scrum Master</div></div><time class="job-period">2024.09 — 2026.02</time></div>
 <div class="job-points">
-<div class="job-point"><div class="point-title">敏捷導入與流程改善</div><p>於兩個產品團隊導入 Scrum 並擔任 Scrum Master（2025/01–2026/02），採兩週 Sprint，主持 Planning、Review、Retrospective；從任務指派至提交 POA／PM 驗收的交付週期縮短約 <strong style="white-space:nowrap">30–50%</strong>。</p></div>
+<div class="job-point"><div class="point-title">營運規劃與績效追蹤</div><p>為約 18 人事業群每月撰寫營運績效報告；每季依檢討結論，擬定組織、行銷、業務、輔導、產品技術<strong>五大面向的次季營運計畫</strong>並追蹤執行，年底延伸為年度計畫，供 BU Head 向總經理及董事會報告。</p></div>
 <div class="job-point"><div class="point-title">目標治理與協作效率</div><p>建立全事業群的 OKR 拆解、追蹤與檢討機制，比對各產品線的新客表現與人力投入，協助主管調整資源配置，並讓 PM 與業務掌握人力成本、調整接案目標；重新設計雙週專案會議，單次由約 60 分鐘縮短至 20 分鐘內。</p></div>
-<div class="job-point wide"><div class="point-title">跨部門管理支援</div><p>協同主管追蹤約 18 人事業群的專案進度、績效指標與產品線資源配置；推動全產品線續約報價標準化，單件報價時間由約 30 分鐘縮短至 10–15 分鐘。</p></div>
-</div></article>
+<div class="job-point"><div class="point-title">敏捷導入與流程改善</div><p>於兩個產品團隊導入 Scrum 並擔任 Scrum Master（2025/01–2026/02），採兩週 Sprint，主持 Planning、Review、Retrospective；從任務指派至提交 POA／PM 驗收的交付週期縮短約 <strong style="white-space:nowrap">30–50%</strong>；並推動全產品線續約報價標準化，單件報價時間由約 30 分鐘縮短至 10–15 分鐘。</p></div>
+<div class="job-point"><div class="point-title">AI 開發導入規劃</div><p>分四階段規劃導入時程，依序建立 Demo 接單機制、需求文件標準與前後端交接流程、維護分級制度，再設計成本模型、報價方式與成效 KPI，作為年度發展方向與團隊編制的決策依據。</p></div>
+</article>
 <article id="job-cutaway" class="job-card reveal"><div class="job-top"><div><h3 class="job-name">Cutaway 卡個位</h3><div class="job-role">營運副理</div></div><time class="job-period">2024.05 — 2024.09</time></div>
 <div class="job-points"><div class="job-point wide"><div class="point-title">營運與人力配置</div><p>帶領 4 人團隊（含 2 位正職與工讀生），負責人力調度、成本控管、服務 SOP 優化及跨部門協調。</p></div></div></article>
 <article id="job-jek" class="job-card reveal"><div class="job-top"><div><h3 class="job-name">潔客幫</h3><div class="job-role">營運專員 → 資深專員 → 組長 → 營運經理</div></div><time class="job-period">2017.06 — 2024.01</time></div>
 <div class="job-points">
 <div class="job-point"><div class="point-title">營運策略與團隊管理</div><p>組長至營運經理期間<strong>帶領 5–8 人團隊</strong>，推動服務定價、供應端量能配置、行銷活動與續約制度調整；2024/01 公司主要服務營收 <strong>YoY +51%</strong>。</p></div>
+<div class="job-point"><div class="point-title">市場分析與區域拓展</div><p>組長期間評估新區域市場拓展與定價，比對各縣市收入水準與預約頻率，提出差異化定價建議，並依競品動態調整服務方向；2022 年拓展 <strong>3 個新服務縣市</strong>，收納服務營收 YoY +90%。</p></div>
 <div class="job-point"><div class="point-title">營運數據與目標追蹤</div><p>規劃部門績效管理，建置 <strong>15 組 AWS QuickSight Dashboard</strong>，提高營運資訊可視性，支援決策與績效追蹤。</p></div>
-<div class="job-point wide"><div class="point-title">新服務與流程建置</div><p>資深營運專員期間，<strong>主導 4 項新服務的上線營運規劃</strong>（流程、官網文案、供應合作與對帳）；營運專員期間推動續約流程自動化，作業時間縮短 50%；並彙整使用者回饋推動官網、後台與 App 改善，滿意度調查平均分數由 4.0 升至約 4.4。</p></div>
+<div class="job-point"><div class="point-title">新服務與流程建置</div><p>資深營運專員期間，<strong>主導 4 項新服務的上線營運規劃</strong>（流程、官網文案、供應合作與對帳）；營運專員期間推動續約流程自動化，作業時間縮短 50%；並彙整使用者回饋推動官網、後台與 App 改善，滿意度調查平均分數由 4.0 升至約 4.4。</p></div>
 </div></article>
 </div>
-<p class="job-note">以與營運管理、PMO／專案管理職務最相關的工作經驗為主，其餘早期職涯經歷保留在正式完整履歷中。</p>
+<p class="job-note">以與營運策略規劃、PMO／專案管理職務最相關的工作經驗為主，其餘早期職涯經歷保留在正式完整履歷中。</p>
 </div></section>
 <section id="projects" class="soft"><div class="wrap">
 <div class="section-heading reveal"><div><div class="eyebrow">04 / SELECTED PROJECTS</div><h2>兩種專案場景，從需求規劃到實際落地</h2></div><p class="section-aside">GoLand 聚焦六人團隊的技術整合與協作；NexNav 展現獨立規劃並實作 MVP 的完整流程。</p></div>
@@ -456,22 +466,31 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <img class="logo-project" src="img/nexnav-logo.png" alt="NexNav 標誌">
 <h3>NexNav<span class="sub-title">智慧健康導航平台</span></h3>
 <p class="description">將症狀記錄、安全確認、改善方向、每日追蹤與醫療溝通摘要串成一套就醫前健康導航流程，不提供疾病診斷。</p>
-<p class="ownership">我的角色：獨立完成產品定位、需求拆解、流程設計、AI 輔助開發與測試。</p>
-<div class="tags"><span>產品定位</span><span>MVP 範圍</span><span>使用者旅程</span><span>AI 輔助開發</span></div>
+<p class="ownership">我的角色：獨立完成市場研究、產品定位、需求拆解、流程設計、AI 輔助開發與測試。</p>
+<div class="tags"><span>市場與競品研究</span><span>產品定位</span><span>MVP 範圍</span><span>使用者旅程</span><span>AI 輔助開發</span></div>
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://nexnav-health-navigator.lovable.app/">體驗 NexNav <span aria-hidden="true">↗</span></a><a class="external" style="margin-left:24px" target="_blank" rel="noopener noreferrer" href="https://github.com/tedyang0612/nexnav-health-compass">查看 NexNav GitHub <span aria-hidden="true">↗</span></a>
 </div><div class="browser"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="img/login.webp" alt="NexNav 產品登入畫面"></div></div>
 <div class="project-main">
-<div class="project-stats cols3"><div class="project-stat"><strong>約 1 個月</strong><small>從構想到發表</small></div><div class="project-stat"><strong>8 個</strong><small>核心模組</small></div><div class="project-stat"><strong>1 套</strong><small>可操作 MVP</small></div></div>
+<div class="project-stats cols3"><div class="project-stat"><strong>20 項</strong><small>國內外競品分析</small></div><div class="project-stat"><strong>8 個</strong><small>核心模組</small></div><div class="project-stat"><strong>1 套</strong><small>可操作 MVP</small></div></div>
 <div class="value-intro">PROJECT HIGHLIGHTS · 挑戰、行動與交付證據</div>
 <div class="value-steps"><div class="value-step"><div class="vs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><div class="step-no">CHALLENGE</div><h4>健康紀錄缺少後續行動指引</h4><p>症狀資訊零散，就醫前難以回顧歷程及整理需要溝通的重點。</p></div>
-<div class="value-step"><div class="vs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L10 22l9-12h-6.5z"/></svg></div><div class="step-no">ACTION</div><h4>獨立完成產品規劃與整合</h4><p>定義就醫前導航定位、八個模組與使用流程，運用 AI 輔助實作。</p></div>
+<div class="value-step"><div class="vs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L10 22l9-12h-6.5z"/></svg></div><div class="step-no">ACTION</div><h4>以研究確立定位，再獨立實作</h4><p>以官方數據與 20 項競品研究確立差異定位，定義八個模組與使用流程，運用 AI 輔助實作。</p></div>
 <div class="value-step"><div class="vs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="17.5" rx="2.2"/><path d="M9 3.5V2.5h6v1"/><path d="m8.8 13 2.2 2.2 4.2-4.6"/></svg></div><div class="step-no">EVIDENCE</div><h4>從需求到可操作 MVP</h4><p>完成症狀追蹤、趨勢檢視與醫療溝通摘要，建立可展示的端到端流程。</p></div></div>
-<div class="transfer"><span class="transfer-title">對應職務能力</span><p>需求分析 · MVP 範圍管理 · 端到端整合</p></div>
-<details class="project-details"><summary><span>探索 NexNav 完整案例<span class="summary-hint">產品截圖、流程拆解、個人貢獻與測試</span></span><span class="toggle-text" aria-hidden="true"></span></summary>
-<div class="detail-in"><div><h4>核心產品畫面</h4><div class="gallery"><figure class="gallery-item"><div class="browser gallery-screen"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img loading="lazy" src="img/dashboard.webp" alt="Dashboard｜狀況總覽" /></div><figcaption><b>Dashboard｜狀況總覽</b><span>整合症狀追蹤、導航進度與下一步操作。</span></figcaption></figure><figure class="gallery-item"><div class="browser gallery-screen"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img loading="lazy" src="img/prepare.webp" alt="Prepare｜醫療溝通摘要" /></div><figcaption><b>Prepare｜醫療溝通摘要</b><span>將歷史紀錄整理為可檢視及匯出的摘要。</span></figcaption></figure></div><p class="note">健康紀錄為個人測試資料；部分趨勢展示含情境模擬，未進行使用者成效或醫療效果驗證。</p></div>
+<div class="transfer"><span class="transfer-title">對應職務能力</span><p>市場分析 · 需求分析 · MVP 範圍管理 · 端到端整合</p></div>
+<details class="project-details"><summary><span>探索 NexNav 完整案例<span class="summary-hint">市場研究、產品截圖、流程拆解、個人貢獻與測試</span></span><span class="toggle-text" aria-hidden="true"></span></summary>
+<div class="detail-in"><div><h4>市場與競品研究</h4>
+<p class="lead2">開發前先確認兩件事：需求是否持續擴大、市場上還缺什麼。整理 2013 年起可比較的官方調查數據，三高、過重與久坐型工作人口皆呈長期成長；再以自建的 8 階段健康旅程（Golden Path）比較國內外 20 項同類產品，發現多數產品只涵蓋其中一至數個階段，因此以「完整旅程承接」作為 NexNav 的差異定位。</p>
+<div class="research">
+<figure class="research-item wide"><a href="img/nexnav-market-trend.webp" target="_blank" rel="noopener"><img loading="lazy" src="img/nexnav-market-trend.webp" alt="市場趨勢：五項指標皆上升，過重與肥胖增幅超過五成"></a><figcaption><b>市場趨勢</b>五項官方指標皆呈成長，過重／肥胖累計增幅 +56.9%，確認目標族群持續擴大。</figcaption></figure>
+<figure class="research-item"><a href="img/nexnav-competitors-tw.webp" target="_blank" rel="noopener"><img loading="lazy" src="img/nexnav-competitors-tw.webp" alt="Golden Path 競品覆蓋：台灣市場 10 項產品"></a><figcaption><b>台灣市場｜10 項競品</b>本地產品多聚焦健康服務與專業銜接，完整串連前中後段者仍少。</figcaption></figure>
+<figure class="research-item"><a href="img/nexnav-competitors-global.webp" target="_blank" rel="noopener"><img loading="lazy" src="img/nexnav-competitors-global.webp" alt="Golden Path 競品覆蓋：海外市場 10 項產品"></a><figcaption><b>海外市場｜10 項競品</b>已形成追蹤、症狀分流、就醫入口三群；NexNav 以流程承接作為差異。</figcaption></figure>
+</div>
+<p class="note">圓點代表公開核心功能明顯涵蓋該階段，屬定位分析，非完整功能稽核；跨期數據因調查年齡基準略有差異，僅供趨勢參考。點擊圖片可放大檢視。</p>
+</div>
+<div><h4>核心產品畫面</h4><div class="gallery"><figure class="gallery-item"><div class="browser gallery-screen"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img loading="lazy" src="img/dashboard.webp" alt="Dashboard｜狀況總覽" /></div><figcaption><b>Dashboard｜狀況總覽</b><span>整合症狀追蹤、導航進度與下一步操作。</span></figcaption></figure><figure class="gallery-item"><div class="browser gallery-screen"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><img loading="lazy" src="img/prepare.webp" alt="Prepare｜醫療溝通摘要" /></div><figcaption><b>Prepare｜醫療溝通摘要</b><span>將歷史紀錄整理為可檢視及匯出的摘要。</span></figcaption></figure></div><p class="note">健康紀錄為個人測試資料；部分趨勢展示含情境模擬，未進行使用者成效或醫療效果驗證。</p></div>
 <div>
 <h4>問題與定位</h4>
-<p class="lead2">面對持續的不適，症狀歷程零散、不知下一步，也增加就醫時重新敘述的負擔。所以把產品定位成「就醫前資訊整理與導航」。串接 <b>記錄 → 安全確認 → 改善方向 → 每日追蹤 → 趨勢回顧 → 導航 → 醫療摘要 → 資源連結</b> 八個步驟。</p>
+<p class="lead2">面對持續的不適，症狀歷程零散、不知下一步，也增加就醫時重新敘述的負擔。所以把產品定位成「就醫前資訊整理與導航」，以完整旅程承接作為差異，串接 <b>記錄 → 安全確認 → 改善方向 → 每日追蹤 → 趨勢回顧 → 導航 → 醫療摘要 → 資源連結</b> 八個步驟。</p>
 </div>
 <div>
 <details class="more"><summary>查看更多畫面（安全確認、改善方向、每日追蹤、趨勢、醫療摘要）</summary>
@@ -489,8 +508,9 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <div>
 <h4>我做了什麼</h4>
 <div class="roles">
+<div class="role"><b>市場與競品研究</b><p>整理官方調查數據確認需求趨勢，並以自建的 8 階段健康旅程比較國內外 20 項同類產品的功能覆蓋，確立差異定位。</p></div>
 <div class="role"><b>需求定位與範圍拆解</b><p>定義目標場景、核心流程與 MVP 功能優先順序。</p></div>
-<div class="role"><b>使用者旅程設計</b><p>以狀態與下一步按鈕引導使用者，把八個模組串成完整旅程。</p></div>
+<div class="role"><b>使用者旅程設計</b><p>依 8 階段健康旅程完成對應的 8 個核心模組，並以狀態與下一步按鈕引導使用者走完整個旅程。</p></div>
 <div class="role"><b>AI 輔助開發與整合</b><p>以 Lovable（React、TypeScript）與 Supabase 建立畫面、資料流程與 Email／Google 登入。</p></div>
 <div class="role"><b>測試與迭代</b><p>邀請 20 位同學試用並蒐集回饋，收斂「簡化首次紀錄流程」與「強化持續使用誘因」兩項優化方向。</p></div>
 </div>
@@ -503,14 +523,14 @@ footer {background:#112734;color:#9caeb6;text-align:center;padding:22px;font-siz
 <section id="skills"><div class="wrap">
 <div class="section-heading reveal"><div><div class="eyebrow">05 / CAPABILITIES</div><h2>方法、工具與實作經驗</h2></div></div>
 <div class="skills-grid">
-<div class="skills-group reveal"><h3>專案治理與協作</h3><div class="tagrow"><span>PMO／專案治理</span><span>Scrum</span><span>OKR</span><span>流程改善</span><span>SOP</span><span>需求分析</span><span>跨部門協作</span></div></div>
-<div class="skills-group reveal"><h3>數據與管理工具</h3><div class="tagrow"><span>AWS QuickSight</span><span>Jira</span><span>Confluence</span><span>Notion</span><span>Google Sheets</span><span>Gemini Notebook</span></div></div>
+<div class="skills-group reveal"><h3>專案治理與協作</h3><div class="tagrow"><span>PMO／專案治理</span><span>營運規劃</span><span>Scrum</span><span>OKR</span><span>流程改善</span><span>SOP</span><span>需求分析</span><span>跨部門協作</span></div></div>
+<div class="skills-group reveal"><h3>數據分析與管理工具</h3><div class="tagrow"><span>市場與競品分析</span><span>AWS QuickSight</span><span>Jira</span><span>Confluence</span><span>Notion</span><span>Google Sheets</span><span>Gemini Notebook</span></div></div>
 <div class="skills-group reveal"><h3>AI 與產品實作</h3><div class="tagrow"><span>Next.js</span><span>Supabase</span><span>GitHub</span><span>Vercel</span><span>Claude Code</span><span>Lovable</span></div></div>
 </div>
 <div class="education"><div><b>學歷</b> 輔仁大學・資訊管理學系</div><div><b>進修</b> 緯育・AI 時代的專案管理師養成班 <span class="light">（2026/10 結訓）</span></div><div><b>檢定進度</b> iPAS AI 應用規劃師 <span class="light">（2026/11 已應試，待放榜）</span></div></div>
 </div></section>
 <section id="contact" class="contact"><div class="wrap contact-grid">
-<div><div class="eyebrow">06 / CONTACT</div><h2>下一段職涯，從新的合作開始。</h2><p>持續探索 PMO、專案管理與營運治理領域，也期待透過 AI 與數位工具，創造更有效率的協作方式。</p>
+<div><div class="eyebrow">06 / CONTACT</div><h2>下一段職涯，從新的合作開始。</h2><p>持續探索 PMO、專案管理與營運策略規劃領域，也期待透過 AI 與數位工具，創造更有效率的協作方式。</p>
 <div class="contact-links"><span>Email　<a href="mailto:t6021822@gmail.com">t6021822@gmail.com</a></span><span>GitHub　<a target="_blank" rel="noopener noreferrer" href="https://github.com/tedyang0612">tedyang0612</a></span><span>LinkedIn　<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tedyang0612">tedyang0612</a></span></div></div>
 <div class="contact-actions"><button type="button" class="btn btn-contact" data-copy="t6021822@gmail.com"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>複製 Email</span></button><a class="btn btn-outline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=t6021822@gmail.com" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>透過 Gmail 聯繫</span></a><a class="btn btn-outline" href="https://www.linkedin.com/in/tedyang0612" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span>LinkedIn 個人檔案</span></a><a class="btn btn-outline" href="Ted_Yang_Resume.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg><span>下載一頁式履歷 PDF</span></a></div>
 </div></section>
